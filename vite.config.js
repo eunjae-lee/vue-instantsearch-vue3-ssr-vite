@@ -11,6 +11,6 @@ module.exports = {
   },
   ssr: {
     external: ['algoliasearch-helper', 'qs', 'hogan.js'],
-    noExternal: ['vue-instantsearch'],
+    noExternal: ['vue-instantsearch', 'instantsearch.js'],
   },
 }
