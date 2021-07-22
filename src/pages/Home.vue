@@ -1,7 +1,7 @@
 <template>
   <div>
     <p>hello</p>
-    <!-- <header class="header">
+    <header class="header">
       <h1 class="header-title">
         <a href="/">
           vue-instantsearch-app
@@ -16,10 +16,7 @@
     </header>
 
     <div class="container">
-      <ais-instant-search
-        :search-client="searchClient"
-        index-name="instant_search"
-      >
+      <ais-instant-search-ssr>
         <div class="search-panel">
           <div class="search-panel__filters">
             <ais-panel>
@@ -49,22 +46,34 @@
             </div>
           </div>
         </div>
-      </ais-instant-search>
-    </div> -->
+      </ais-instant-search-ssr>
+    </div>
   </div>
 </template>
 
 <script>
-// import algoliasearch from 'algoliasearch/lite'
+import {
+  AisInstantSearchSsr,
+  AisPanel,
+  AisRefinementList,
+  AisSearchBox,
+  AisHits,
+  AisHighlight,
+  AisPagination,
+} from 'vue-instantsearch/dist/vue3/es'
 
 export default {
+  components: {
+    AisInstantSearchSsr,
+    AisPanel,
+    AisRefinementList,
+    AisSearchBox,
+    AisHits,
+    AisHighlight,
+    AisPagination,
+  },
   data() {
-    return {
-      // searchClient: algoliasearch(
-      //   'latency',
-      //   '6be0576ff61c053d5f9a3225e2a90f76'
-      // ),
-    }
+    return {}
   },
 }
 </script>
