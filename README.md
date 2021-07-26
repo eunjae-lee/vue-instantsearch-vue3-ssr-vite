@@ -1,4 +1,4 @@
-# Vue InstantSearch with vue 3 + vite
+# Vue InstantSearch with Vue 3 + SSR + vite
 
 This repository is based on https://github.com/vitejs/vite/tree/b1598cec7ee185f796d8679f0a97d36b80fe1949/packages/playground/ssr-vue
 
